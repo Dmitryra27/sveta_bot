@@ -1,5 +1,5 @@
 import asyncio
-import config
+
 import aiohttp
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
@@ -7,7 +7,7 @@ import logging
 # Включаем логирование
 logging.basicConfig(level=logging.INFO)
 # Создаем объект бота
-API_TOKEN = config.token
+API_TOKEN = os.getenv('token')
 bot = Bot(token=API_TOKEN)
 # Диспетчер
 dp = Dispatcher()
