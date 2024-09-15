@@ -7,7 +7,7 @@ import logging
 # Включаем логирование
 logging.basicConfig(level=logging.INFO)
 # Создаем объект бота
-API_TOKEN = os.getenv('token')
+API_TOKEN = os.getenv('TOKEN')
 bot = Bot(token=API_TOKEN)
 # Диспетчер
 dp = Dispatcher()
