@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 #API_TOKEN = os.getenv('TOKEN')
 API_TOKEN = os.getenv('token')
 print(f"API_TOKEN: {API_TOKEN}")
-bot = Bot(API_TOKEN)
+bot = Bot(token='7406770366:AAGXWXnJbknGkTcsKrpkOjRDqf7e5qUuaAk')
 # Диспетчер
 dp = Dispatcher()
 # Определяем кнопки
